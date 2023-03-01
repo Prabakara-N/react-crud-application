@@ -49,14 +49,24 @@ const App = () => {
     });
   };
 
+  // clear Item
+  const clearItems = () => {
+    setList([]);
+    setAlertMsg({
+      show: true,
+      msg: "Items Cleared !",
+      type: "clear",
+    });
+  };
+
   // edit item
-  function editItem(id) {
+  const editItem = (id) => {
     const itemToEdit = list.find((item) => item.id === id);
     setisEditing(true);
     setEditId(id);
     setItemName(itemToEdit.title);
     setQuantity(itemToEdit.quantity);
-  }
+  };
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -136,7 +146,7 @@ const App = () => {
 
             <List items={list} deleteItem={deleteItem} editItem={editItem} />
             <div className="btn">
-              <button id="clr" type="button" onClick={() => setList([])}>
+              <button id="clr" type="button" onClick={clearItems}>
                 Clear All
               </button>
             </div>

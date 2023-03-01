@@ -195,7 +195,7 @@ input[type="number"] {
 }
 
 .alert-success {
-  background-color: #20bf55;
+  background-color: #39ae60;
   transition: all 0.5s linear;
 }
 
@@ -213,6 +213,12 @@ input[type="number"] {
 
 .alert-edited {
   background-color: #d1ecf1;
+  transition: all 0.5s linear;
+  color: var(--clr-denim-blue);
+}
+
+.alert-clear {
+  background-color: #d6d8d9;
   transition: all 0.5s linear;
   color: var(--clr-denim-blue);
 }
