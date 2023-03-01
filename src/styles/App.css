@@ -155,9 +155,16 @@ input::-webkit-inner-spin-button {
 .edit-btn,
 .delete-btn {
   margin-right: 10px;
-  color: #1768ac;
   font-size: 1.3rem;
   transition: all 0.3s;
+}
+
+.edit-btn {
+  color: #1768ac;
+}
+
+.delete-btn {
+  color: #fe5315;
 }
 
 .edit-btn:hover {
@@ -166,7 +173,7 @@ input::-webkit-inner-spin-button {
 }
 
 .delete-btn:hover {
-  color: orangered;
+  color: red;
   transition: all 0.3s;
 }
 
@@ -183,6 +190,10 @@ input[type="number"] {
   border-radius: 8px;
   box-shadow: 1px 1px 1px rgb(231, 231, 231), -1px -1px 1px rgb(231, 231, 231);
   border: none;
+}
+
+.alert-set {
+  visibility: hidden;
 }
 
 .alert {

@@ -68,12 +68,13 @@ const App = () => {
     setQuantity(itemToEdit.quantity);
   };
 
+  // onSubmit
   const submitHandler = (e) => {
     e.preventDefault();
     if (!itemName || !quantity) {
       setAlertMsg({
         show: true,
-        msg: "Please Enter A Value !",
+        msg: "Please Enter A Item !",
         type: "danger",
       });
     } else if (itemName && quantity && isEditing) {
@@ -114,9 +115,7 @@ const App = () => {
           <h1> 5 Star Hotel 🍕</h1>
         </div>
 
-        <div className="alert-set">
-          {alertMsg.show && <Alert {...alertMsg} showAlert={setAlertMsg} />}
-        </div>
+        {alertMsg.show && <Alert {...alertMsg} showAlert={setAlertMsg} />}
 
         <form onSubmit={submitHandler}>
           <div className="form-control">
