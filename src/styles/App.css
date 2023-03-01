@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-dark-violet: #011936;
+  --clr-Very-Dark: #161722;
+  --clr-Very-Dark-Desaturated-Blue: #25273c;
+  --clr-Very-Grayish-Blue: #4d5066;
+  --clr-Very-Dark-Grayish-Blue: #393a4c;
+  --clr-verdigris: #48a9a6;
+  --dark-pastel-green: #20bf55;
+  --clr-blue: #0b4f6c;
+  --clr-royal-blue-dark: #03256c;
+  --clr-denim-blue: #2541b2;
+  --clr-blue: #1768ac;
+  --clr-Dark-Blue: #2b3945;
+  --clr-Very-Dark-Blue: #202c37;
+  --clr-Very-Dark-Blue-Light: #111517;
+  --clr-Dark-Grayish-Blue: #323a49;
+  --box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-Very-Dark-Desaturated-Blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+#root {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: -1rem;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+input {
+  padding: 0.9rem 0;
+  padding-left: 0.75rem;
+  width: 100%;
+  margin: 1rem auto;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(231, 231, 231), -1px -1px 1px rgb(231, 231, 231);
+}
+
+.btn {
+  text-align: center;
+}
+
+button {
+  margin-left: 5px;
+  width: 8rem;
+  padding: 0.7rem 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: var(--clr-denim-blue);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transition: all 0.5s;
+  background-color: #123be1;
+}
+
+#clr {
+  margin-top: 1rem;
+}
+
+/*  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.order p {
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #20bf55;
+  background-color: rgb(206, 220, 233);
+}
+
+.form-control {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-items {
+  padding: 12px 0 0;
+  padding-left: 1.25rem;
+  background-color: aliceblue;
+  color: #011936;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-right: 10px;
+  color: #1768ac;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+.edit-btn:hover {
+  color: #202c37;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  color: orangered;
+  transition: all 0.3s;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.list-container {
+  padding: 1rem;
+  background-color: white;
+  color: #1768ac;
+  text-transform: capitalize;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgb(231, 231, 231), -1px -1px 1px rgb(231, 231, 231);
+  border: none;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  font-weight: 600;
+  transition: all 0.5s linear;
+}
+
+.alert-success {
+  background-color: #20bf55;
+  transition: all 0.5s linear;
+}
+
+.alert-danger {
+  background-color: #efa9ae;
+  transition: all 0.5s linear;
+  color: orangered;
+}
+
+.alert-deleted {
+  background-color: #f9eab9;
+  transition: all 0.5s linear;
+  color: orangered;
+}
+
+.alert-edited {
+  background-color: #d1ecf1;
+  transition: all 0.5s linear;
+  color: var(--clr-denim-blue);
+}
+
+/* media screen */
+@media screen and (min-width: 600px) {
+  #root {
+    width: 550px;
+    margin: 2rem auto;
+  }
+
+  form {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+
+  input {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
